@@ -64,7 +64,7 @@ public sealed class Validate
 
         ButtonHelper.ClickButton(By.Id("submitCard"));
         Assert.IsTrue(PageHelper.GetPageUrl() == "/paymentConfirmed");
-        Assert.IsTrue(GenericHelper.IsElementPresentOnce(By.Id("page-payment-validate")));
+        Assert.AreEqual(PageHelper.GetPageTitle(), "Paiement confirmé");
     }
 
     [Given(@"elements are present")]
