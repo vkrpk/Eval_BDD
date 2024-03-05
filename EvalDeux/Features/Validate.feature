@@ -6,6 +6,7 @@ Scenario: Validate a credit card number
 	And elements are present
 #	When provide the <cardNumber> and <expiryDate> and <cvv>
 	When provide the information
+	And verify the information is valid
 	And click on payer button
 	Then User should be at paymentConfirmed page
 
