@@ -1,4 +1,4 @@
-namespace Workshop_note;
+namespace EvalDeux;
 
 public class CreditCard
 {

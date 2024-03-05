@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Text;
 using System.Threading.Tasks;
+using OpenQA.Selenium.Chrome;
 
 namespace BugzillaWebDriver.ComponentHelper
 {
@@ -13,13 +14,15 @@ namespace BugzillaWebDriver.ComponentHelper
         {
             // Console.WriteLine(url);
             // ObjectRepository.Driver.Navigate().GoToUrl(url);
-            ObjectRepository.Driver.Navigate().GoToUrl("file:///home/vkrpk/RiderProjects/BWAPP_ATDD_NEW/Workshop%20not%C3%A9/Workshop.html");
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("file:///home/vkrpk/RiderProjects/BWAPP_ATDD_NEW/Workshop%20not%C3%A9/Workshop.html");
         }
 
         public static void NavigateToHomePage()
         {
             // ObjectRepository.Driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebsite());
-            ObjectRepository.Driver.Navigate().GoToUrl("file:///home/vkrpk/RiderProjects/BWAPP_ATDD_NEW/Workshop%20not%C3%A9/Workshop.html");
+            IWebDriver driver = new ChromeDriver();
+            driver.Navigate().GoToUrl("http://localhost/index.html");
         }
 
         public static void Logout()

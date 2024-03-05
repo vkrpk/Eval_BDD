@@ -3,10 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using BugzillaWebDriver.ComponentHelper;
-using NUnit.Framework;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using OpenQA.Selenium;
-using TechTalk.SpecFlow;
-using Workshop_note;
 
 namespace EvalDeux.Features;
 
@@ -73,5 +71,6 @@ public sealed class Validate
         Assert.IsTrue(GenericHelper.IsElementPresentOnce(By.Id("creditCardNumber")));
         Assert.IsTrue(GenericHelper.IsElementPresentOnce(By.Id("expirationDate")));
         Assert.IsTrue(GenericHelper.IsElementPresentOnce(By.Id("cvc")));
+        Assert.IsTrue(GenericHelper.IsElementPresentOnce(By.Id("submitCard")));
     }
 }
