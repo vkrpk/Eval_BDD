@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <title>Page Workshop Card Validator</title>
+</head>
+
+<body>
+    <h1 id="page-title">Workshop de validation d'une carte de crédit en BDD</h1>
+    <form method="Get" action="/paymentConfirmed">
+        <div class="input-wrapper text">
+            <label for="creditCardNumber">Numéro de carte (16 chiffres)</label>
+            <input minlength="16" maxlenght="16" required type="text" id="creditCardNumber" />
+        </div>
+        <div class="input-wrapper text">
+            <label for="expirationDate">Date d'expiration (MM/YYYY)</label>
+            <input minlength="7" maxlength="7" pattern="[0-9]{2}\/[0-9]{4}" required type="text" id="expirationDate" />
+        </div>
+        <div class="input-wrapper text">
+            <label for="cvc">CVC (3 Chiffres)</label>
+            <input minlength="3" maxlenght="3" required type="text" id="cvc" />
+        </div>
+        <div class="input-wrapper submit">
+            <input type="submit" id="submitCard" value="Payer"></input>
+        </div>
+    </form>
+
+</body>
+</html>
