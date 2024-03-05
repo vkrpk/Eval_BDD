@@ -11,5 +11,8 @@ namespace BugzillaWebDriver.Interfaces
         public string GetUsername();
         public string GetPassword();
         public string GetWebsite();
+        public string GetCardNumber();
+        public string GetExpiryDate();
+        public string GetCVV();
     }
 }

@@ -12,17 +12,12 @@ namespace BugzillaWebDriver.ComponentHelper
     {
         public static void NavigateToUrl(string url)
         {
-            // Console.WriteLine(url);
-            // ObjectRepository.Driver.Navigate().GoToUrl(url);
-            IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("file:///home/vkrpk/RiderProjects/BWAPP_ATDD_NEW/Workshop%20not%C3%A9/Workshop.html");
+            ObjectRepository.Driver.Navigate().GoToUrl(url);
         }
 
         public static void NavigateToHomePage()
         {
-            // ObjectRepository.Driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebsite());
-            IWebDriver driver = new ChromeDriver();
-            driver.Navigate().GoToUrl("http://localhost/index.html");
+            ObjectRepository.Driver.Navigate().GoToUrl(ObjectRepository.Config.GetWebsite());
         }
 
         public static void Logout()

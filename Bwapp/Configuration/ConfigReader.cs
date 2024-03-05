@@ -51,5 +51,20 @@ namespace BugzillaWebDriver.Configuration
         {
             return settings.Website;
         }
+
+        public string GetExpiryDate()
+        {
+            return settings.ExpiryDate;
+        }
+
+        public string GetCardNumber()
+        {
+            return settings.CardNumber;
+        }
+
+        public string GetCVV()
+        {
+            return settings.CVV;
+        }
     }
 }
